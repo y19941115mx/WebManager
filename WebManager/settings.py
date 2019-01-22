@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mysite',
+    'policy',
     'xadmin',
     'crispy_forms',
 ]
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'WebManager.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test_django2',
+        'NAME': 'django',
         'USER': 'root',
         'PASSWORD': 'root',
         'HOST': '118.24.239.97'
