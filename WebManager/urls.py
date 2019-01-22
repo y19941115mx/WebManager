@@ -16,8 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import xadmin
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('xadmin/', xadmin.site.urls)
+    path('xadmin/', xadmin.site.urls),
+    staticfiles_urlpatterns()
 ]
