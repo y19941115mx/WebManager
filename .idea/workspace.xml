@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5967b164-0d49-4d45-b118-8e64654433f0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/WebManager/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebManager/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gunicorn.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,19 +50,28 @@
         <entry file="file://$PROJECT_DIR$/WebManager/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="212">
-              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebManager/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+              <folding>
+                <element signature="e#634#666#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebManager/urls.py">
+        <entry file="file://$PROJECT_DIR$/gunicorn.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="22" column="11" selection-start-line="22" selection-end-line="22" selection-end-column="11" />
-              <folding>
-                <element signature="e#634#666#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="57">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -155,6 +165,7 @@
         <option value="$PROJECT_DIR$/policy/adminx.py" />
         <option value="$PROJECT_DIR$/WebManager/settings.py" />
         <option value="$PROJECT_DIR$/WebManager/urls.py" />
+        <option value="$PROJECT_DIR$/gunicorn.conf" />
       </list>
     </option>
   </component>
@@ -250,12 +261,12 @@
       <workItem from="1547983256449" duration="2904000" />
       <workItem from="1547987590555" duration="6796000" />
       <workItem from="1548122839560" duration="2655000" />
-      <workItem from="1548153139182" duration="823000" />
+      <workItem from="1548153139182" duration="1537000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25399000" />
+    <option name="totallyTimeSpent" value="26113000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -268,7 +279,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25751072" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -398,17 +408,24 @@
     <entry file="file://$PROJECT_DIR$/WebManager/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebManager/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="11" selection-start-line="22" selection-end-line="22" selection-end-column="11" />
+        <state relative-caret-position="361">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
           <folding>
             <element signature="e#634#666#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gunicorn.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
         </state>
       </provider>
     </entry>
