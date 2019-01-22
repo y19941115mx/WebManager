@@ -59,6 +59,7 @@ db.sqlite3
 .idea/
 .vscode/
 .history/
+.logs/
 
 # Flask stuff:
 instance/
