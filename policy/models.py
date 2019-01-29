@@ -73,6 +73,9 @@ class PatentLimit(models.Model):
     class Meta:
         verbose_name = "专利限制"
         verbose_name_plural = verbose_name
+    
+    def __str__(self):
+        return '专利限制 %d' % self.id 
 
 
 class StaffLimit(models.Model):
@@ -90,6 +93,9 @@ class StaffLimit(models.Model):
     class Meta:
         verbose_name = "员工限制"
         verbose_name_plural = verbose_name
+    
+    def __str__(self):
+        return '员工限制 %d' % self.id 
 
 
 
