@@ -21,27 +21,27 @@ class PolicyCardInline(object):
     extra = 1
 
 
-@xadmin.sites.register(Policy)
-class PolicyAdmin(object):
-    inlines = [PolicyCardInline]
+# @xadmin.sites.register(Policy)
+# class PolicyAdmin(object):
+#     inlines = [PolicyCardInline]
 
-    show_bookmarks = False
+#     show_bookmarks = False
 
-    list_display = ('policy_title', 'policy_id', 'add_time')
-    list_display_links = ("policy_title",)
+#     list_display = ('policy_title', 'policy_id', 'add_time')
+#     list_display_links = ("policy_title",)
 
-    list_filter = ['policy_title', 'policy_id', 'add_time']
-    search_fields = ['policy_title', 'policy_id']
-    # style_fields = {"hosts": "checkbox-inline"}
+#     list_filter = ['policy_title', 'policy_id', 'add_time']
+#     search_fields = ['policy_title', 'policy_id']
+#     # style_fields = {"hosts": "checkbox-inline"}
 
 
 @xadmin.sites.register(PolicyCard)
 class PolicyCardAdmin(object):
     show_bookmarks = False
-    list_display = ('title', 'policy', 'apply_time', 'add_time')
+    list_display = ('policy_id', 'title', 'end_time', 'add_time')
     list_display_links = ("title",)
-    list_filter = ["title", 'apply_time', 'add_time']
-    search_fields = ["title"]
+    list_filter = ["title", 'end_time', 'add_time']
+    search_fields = ["title", 'policy_id']
 
 
 
