@@ -18,7 +18,7 @@ class PolicyCard(models.Model):
     )
 
 
-    policy_id = models.IntegerField('政策编号', primary_key=True, default=None)
+    policy_id = models.IntegerField('政策编号', primary_key=True, default=0)
     title = models.CharField('标题', max_length=50)
     reward_content = models.TextField('奖补内容')
     policy_basis = models.TextField('政策依据', max_length=500)
