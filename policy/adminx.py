@@ -16,10 +16,28 @@ class GlobalSetting(object):
     site_footer = '江淮政策云'
 
 
-class PolicyCardInline(object):
-    model = PolicyCard
+class ResourceInline(object):
+    model = PolicyResource
     extra = 1
 
+class PatentInline(object):
+    model = PatentLimit
+    extra = 1
+
+class StaffInline(object):
+    model = StaffLimit
+    extra = 1
+
+@xadmin.sites.register(PolicyResource)
+class ResourceAdmin(object):
+    show_bookmarks = False
+
+    list_display = ('card', 'name')
+    list_display_links = ("name",)
+
+    list_filter = ['name', 'add_time']
+    search_fields = ['name']
+    # style_fields = {"hosts": "checkbox-inline"}
 
 # @xadmin.sites.register(Policy)
 # class PolicyAdmin(object):
@@ -37,6 +55,7 @@ class PolicyCardInline(object):
 
 @xadmin.sites.register(PolicyCard)
 class PolicyCardAdmin(object):
+    inlines = [StaffInline, PatentInline, ResourceInline]
     show_bookmarks = False
     list_display = ('policy_id', 'title', 'end_time', 'add_time')
     list_display_links = ("title",)
