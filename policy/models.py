@@ -57,6 +57,9 @@ class PolicyResource(models.Model):
     class Meta:
         verbose_name = u"政策卡文件资源"
         verbose_name_plural = verbose_name
+    
+    def __str__(self):
+        return self.name
 
 class PatentLimit(models.Model):
     patent_type_choices = (
